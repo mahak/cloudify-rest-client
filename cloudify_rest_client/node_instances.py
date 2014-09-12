@@ -137,7 +137,7 @@ class NodeInstancesClient(object):
         :param deployment_id: The deployment's id to list node instances for.
         :param _include: List of fields to include in response.
         :return: Node instances.
-        :rtype: list
+        :rtype: list of NodeInstance
         """
         params = {'deployment_id': deployment_id} if deployment_id else None
         response = self.api.get('/node-instances',
